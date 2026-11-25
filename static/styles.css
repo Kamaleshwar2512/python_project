@@ -1,0 +1,45 @@
+
+body {
+    background: #f4f6fb;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+}
+
+.calculator-card {
+    max-width: 480px;
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+.form-control,
+.form-select {
+    padding: 12px;
+    border-radius: 9px;
+}
+
+.calculate-btn {
+    background: #635bdb;
+    color: white;
+    padding: 13px;
+    border-radius: 9px;
+    font-weight: bold;
+}
+
+.calculate-btn:hover {
+    background: #4f46c8;
+    color: white;
+}
+
+.result-box {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    padding: 22px;
+    border-radius: 12px;
+}
+
+.final-price {
+    color: #15803d;
+    font-weight: bold;
+}

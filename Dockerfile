@@ -20,5 +20,13 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy project files
 COPY . .
 
+
+# Run as a non-root user
+RUN useradd --create-home appuser \
+    && chown -R appuser:appuser /app
+
+USER appuser
+
+EXPOSE 5000
 # Run the application
-CMD ["python", "main.py"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "2", "app:app"]
